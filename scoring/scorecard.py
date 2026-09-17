@@ -126,7 +126,7 @@ def main():
         note = " (missing)" if r.get("missing") else (" (error)" if r.get("error") else "")
         lines.append(f"| {name}{note} | {r.get('group','?')} | {r.get('type','?')} | {val} "
                      f"| {r['points']} / {r['weight']} |")
-    (outdir / "SCORECARD.md").write_text("\n".join(lines) + "\n")
+    (outdir / "SCORECARD.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
     print(f"\nwrote {outdir/'SCORECARD.md'} and scorecard.json")
 

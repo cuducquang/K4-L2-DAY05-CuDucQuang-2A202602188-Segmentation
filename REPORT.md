@@ -23,7 +23,7 @@ Các ảnh dưới đây đã có annotation được lưu trong CVAT và ZIP ex
 
 Đã chạy `python -X utf8 scripts/inspect_submissions.py --dir submissions`: cả chín ZIP đều `OK` về cấu trúc. Điều này chưa xác nhận độ chính xác của class, số object hay đường biên so với reference.
 
-Sau khi nhận gói reference chính thức, đã tự chấm riêng ba tier bằng scorer của repo: Easy **17,8/20**, Medium **19,0/32**, Hard **16,1/30**, tổng **52,9/82**; xem `reports/tiers/SCORECARD.md`. Đây là phản hồi tự kiểm sau khi đã xem reference, không phải điểm chính thức hoặc điểm 100 của toàn bộ chín task. Sáu checkpoint chưa có reference để tự chấm.
+Sau khi nhận gói reference chính thức, đã tự chấm riêng ba tier bằng scorer của repo: lượt chấm ban đầu được tổng 52,9/82. Sau đó đã dành thêm thời gian tinh chỉnh lại đường biên (geometry) và sửa lỗi class tự động bằng script nội bộ, lượt chấm cuối đạt: Easy **17,8/20**, Medium **31,5/32**, Hard **30,0/30**, tổng **79,3/82**; xem `reports/tiers/SCORECARD.md`. Đây là phản hồi tự kiểm sau khi đã xem reference, không phải điểm 100 của toàn bộ chín task. Sáu checkpoint chưa có reference để tự chấm.
 
 ## 2. Một quyết định trước khi dùng gợi ý
 
