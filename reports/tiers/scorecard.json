@@ -1,0 +1,32 @@
+{
+  "total": 52.9,
+  "max": 82,
+  "group": "tiers",
+  "review_flags": [],
+  "tasks": {
+    "easy_semantic": {
+      "type": "semantic",
+      "group": "tiers",
+      "weight": 20,
+      "points": 17.8,
+      "value": 0.801,
+      "flags": []
+    },
+    "medium_instance": {
+      "type": "instance",
+      "group": "tiers",
+      "weight": 32,
+      "points": 19.0,
+      "value": 0.667,
+      "flags": []
+    },
+    "hard_panoptic": {
+      "type": "panoptic",
+      "group": "tiers",
+      "weight": 30,
+      "points": 16.1,
+      "value": 0.441,
+      "flags": []
+    }
+  }
+}
